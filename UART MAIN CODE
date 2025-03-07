@@ -1,0 +1,14 @@
+#include<lpc21xx.h>
+#include"uartheader.h"
+
+int main()
+{
+		unsigned char x;
+	UART0_CONFIG();
+	while(1){
+	x=UART0_RX();
+	UART0_TX(x);
+	}
+
+	
+}
